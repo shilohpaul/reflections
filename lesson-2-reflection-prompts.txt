@@ -1,18 +1,20 @@
 What happens when you initialize a repository? Why do you need to do it?
+You create a git repository so now git can track your repository. There are no commits yet. You  need to have the file you want to make a git repository for open on the command line (cd ~Documents/GitHub\ Files/Reflections) and then use the git init command.
 
-How is the staging area different from the working directory and the repository?
-What value do you think it offers?
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+I really don't understand the benefits. I guess it just lets you separate files by commit, but it seems like that could be done in other ways... 
 
-How can you use the staging area to make sure you have one commit per logical
-change?
+How can you use the staging area to make sure you have one commit per logical change?
+Since you can put just one file in the staging area, you can commit just one file from the working directory, even if multiple files in the working directory have been changed. That way if the changes are unrelated, it allows for you to transfer just one to the staging area at a time, and commit that one. You can do the next file later.
 
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+If you want to make a different version of your file, creating a branch will allow you to do that and keep things organized.
 
 How do the diagrams help you visualize the branch structure?
+It helps me understand how they are connected and how others are not connected. I can see how trying to keep this in my head would get really confusing because I would forget what is connected to what and where they broke off. 
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+The result is that any lines added to the last common convergence are added in the merge to the master branch, and any lines removed since the last common convergence are removed in the master branch. We represent it in the diagram in order to demonstrate that the new commit will have both branches as parents, rather than just one.
 
-What are the pros and cons of Git's automatic merging vs. always doing merges
-manually?
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+Pro: Makes way less work. Plus if there are conflicts, it points them out for you so you don't have to find them. Con: Maybe it could miss something?
